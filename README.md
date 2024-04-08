@@ -1,4 +1,5 @@
 # cars_price
+link to dataset: https://www.kaggle.com/datasets/thedevastator/uncovering-factors-that-affect-used-car-prices
 
 # install requirments in virtual environments
 if there are some issues go to https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
