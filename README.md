@@ -1,7 +1,7 @@
 # cars_price
 
 # install requirments in virtual environments
-if there are some issues got https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+if there are some issues go to https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 1. python -m venv .venv
 2. source .venv/Scripts/activate
