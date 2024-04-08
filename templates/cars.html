@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Cars Details</title>
+<!--    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">-->
+</head>
+<body>
+    <form action="/cars_price/" method="post">
+        {% for key, values in cars_item.items() %}
+      <label for="{{key}}">{{key}}:</label>
+        {% if values==0 %}
+        <input type="text" id="{{key}}" name="{{key}}"><br><br>
+        {% else %}
+            <select id="{{key}}" name="{{key}}">
+                {% for item in values %}
+              <option value="{{item}}">{{item}}</option>
+                {% endfor %}
+            </select><br><br>
+        {% endif %}
+        {% endfor %}
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
