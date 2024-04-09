@@ -25,15 +25,3 @@ class Analysis:
             ax.bar_label(p, label_type='center')
         ax.legend()
         plt.show()
-
-    def draw_positions_on_pitch(self, positions):
-        fig, ax = plt.subplots()
-        pitch = np.array(Image.open('analyse/pitch.png'))
-        plt.imshow(pitch, extent=[0,120,0,80])
-        for category in positions.columns:
-            pos_data = np.array(positions[category].to_list())
-            x = pos_data[:,0]
-            y = pos_data[:,1]
-            ax.scatter(x, y, marker="x", s=3, label=category)
-        ax.legend()
-        plt.show()
