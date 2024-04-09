@@ -5,7 +5,7 @@ from PIL import Image
 
 
 class Analysis:
-    def get_cat_amount(self, categories):
+    def get_cat_amount(self, categories: pd.DataFrame):
         bottom = None
         fig, ax = plt.subplots()
         columns = categories.columns
