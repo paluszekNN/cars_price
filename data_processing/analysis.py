@@ -24,4 +24,4 @@ class Analysis:
             bottom += data[category].values
             ax.bar_label(p, label_type='center')
         ax.legend()
-        plt.show()
+        plt.show(block=True)
